@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function UseState() {
   const [count, setCount] = useState(0);
@@ -9,6 +9,7 @@ export default function UseState() {
 
   return (
     <div>
+      <h1>UseState</h1>
       <h3>Couter</h3>
       Value: {count}
       <br />
