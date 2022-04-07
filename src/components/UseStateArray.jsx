@@ -7,6 +7,8 @@ export default function UseStateArray() {
   const [arrayList, setArrayList] = useState([]);
 
   const submit = () => {
+    if (!inputValue) return;
+
     const value = {
       id: arrayList.length + 1,
       text: inputValue,
@@ -23,12 +25,10 @@ export default function UseStateArray() {
     <div>
       <h1>UseState Array</h1>
       <h3>List</h3>
-      <form action="">
-        <input type="text" name="item" onChange={(e) => addItem(e)} />
-        <br />
-        <br />
-        <input type="button" value="Add" onClick={submit} />
-      </form>
+      <input type="text" name="item" onChange={(e) => addItem(e)} />
+      <br />
+      <br />
+      <input type="button" value="Add" onClick={submit} />
       <br />
       <br />
       <ul style={listStyle}>
