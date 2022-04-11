@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-export default function useEffectCallApi() {
+export default function UseEffectCallApi() {
   const listStyle = { height: "150px", overflow: "auto" };
 
   const [searchList, setSearchList] = useState({ hits: [] });
