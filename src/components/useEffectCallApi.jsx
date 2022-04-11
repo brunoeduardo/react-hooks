@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function useEffectCallApi() {
+  const listStyle = { height: "150px", overflow: "auto" };
+
   const [searchList, setSearchList] = useState({ hits: [] });
   const [filterItem, setFilterItem] = useState("linux");
 
@@ -27,7 +29,7 @@ export default function useEffectCallApi() {
       <br />
       <br />
       <br />
-      <ul>
+      <ul style={listStyle}>
         {searchList.hits.map((e) => (
           <li key={e.objectID}>{e.title}</li>
         ))}
