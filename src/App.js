@@ -3,6 +3,7 @@ import UseEffect from "./components/UseEffect";
 import UseState from "./components/UseState";
 import UseStateArray from "./components/UseStateArray";
 import UseStateObject from "./components/UseStateObject";
+import UseEffectCallApi from "./components/useEffectCallApi";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <UseStateArray></UseStateArray>
       <hr />
       <UseEffect></UseEffect>
+      <hr />
+      <UseEffectCallApi></UseEffectCallApi>
       <hr />
     </div>
   );
