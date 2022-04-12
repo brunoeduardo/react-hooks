@@ -6,6 +6,7 @@ import UseStateObject from "./components/UseStateObject";
 import UseEffectCallApi from "./components/UseEffectCallApi";
 import UseEffectCleanup from "./components/useEffectCleanup/UseEffectCleanup";
 import UseCallBack from "./components/useCallBack/UseCallBacks";
+import UseMemo from "./components/UseMemo";
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
       <UseEffectCleanup></UseEffectCleanup>
       <hr />
       <UseCallBack></UseCallBack>
+      <hr />
+      <UseMemo></UseMemo>
       <hr />
     </div>
   );
