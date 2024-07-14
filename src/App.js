@@ -7,6 +7,7 @@ import UseEffectCallApi from "./components/UseEffectCallApi";
 import UseEffectCleanup from "./components/useEffectCleanup/UseEffectCleanup";
 import UseCallBack from "./components/useCallBack/UseCallBacks";
 import UseMemo from "./components/UseMemo";
+import UseReducer from "./components/useReducer";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <hr />
       <UseMemo></UseMemo>
       <hr />
+      <UseReducer/>
     </div>
   );
 }
